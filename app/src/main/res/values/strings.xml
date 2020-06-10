@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">UOW Connect</string>
+    <string name="username">Username</string>
+    <string name="login">LOGIN</string>
+    <string name="signup_now">Signup Now</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="password">Password</string>
+    <string name="todo">TODO</string>
+    <string name="dialog_post">PostDialog</string>
+    <string name="previous">Previous</string>
+    <string name="finish">Finish</string>
+    <string name="finish_button">Finish</string>
+    <string name="postTitleInput">Enter a Title</string>
+    <string name="postDescriptionInput">Enter a Description for the Problem</string>
+    <string name="next">Next</string>
+    <string name="onboarding_finished">Onboarding finished!</string>
+    <string name="android_title">Get in touch with UOW </string>
+    <string name="android_description">UOW Connect lets you know more about UOW with handful of information related to courses, staff, keydates and timetable </string>
+    <string name="ios_title">Check which event is happening nearby</string>
+    <string name="ios_description">If you are the type to go out and enjoy, this is the right place to check out some cool events happening around you. </string>
+    <string name="unity_title">Unity - Games galore</string>
+    <string name="unity_description">Unity really is fun. If you\'re looking to create some games, when you\'re not playing them, we have everything you need!</string>
+    <string name="kotlin_title">Kotlin - The beautiful thing</string>
+    <string name="kotlin_description">We all know Kotlin is just the best. Some might say that it\'s what programming languages should be. And they would be 100% korrect.</string>
+    <string name="swift_title">Swift - The not so good Kotlin</string>
+    <string name="swift_description">Swift is cool too. But not as cool as Kotlin, right? It\'s pretty similar to our beautiful, one of a kind, language, so you can learn it here as well.</string>
+    <string name="title_activity_main__page">UOW Connect</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_logout">Logout</string>
+    <string name="safezone_title">Starter Pack</string>
+    <string name="safezone_description">A guide for new students to set yourself up for the study ahead</string>
+    <string name="counselling_title">Hangouts</string>
+    <string name="counselling_description">Connect with fellow UOW students and explore with our chat service which connects you with current UOW students from a range of faculties and programs </string>
+    <string name="career_title">Discussion Forums</string>>
+    <string name="career_description">The student forum is a chance for students to engage with other students in a productive dialog that is focused on improving the student experience</string>
+    >
+    <string name="about">The University of Wollongong was founded on the donations of local people who had a vision of a brighter future for our region. Since then, we have acted in partnership with our communities to not only make an impact in the Illawarra, but to address society’s critical economic, environmental, social and medical challenges.</string>
+    <string name="Ranking">UOW is consistently ranked in the top 1% of universities in the world for the quality of our graduates.UOW graduates are well respected and are consistently ranked among the top one percent in the world by employers. We pride ourselves on preparing people for emerging industries and future jobs, people who are ready to succeed, and take their careers to the next level to make a positive contribution to their communities.</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_weather">Weather</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_view_users">ViewUsersActivity</string>
+
+    <string-array name="country_array">
+        <item>Australia</item>
+        <item>China</item>
+        <item>India</item>
+    </string-array>
+    <string-array name="filter_country_array">
+        <item>All</item>
+        <item>Australia</item>
+        <item>China</item>
+        <item>India</item>
+    </string-array>
+</resources>

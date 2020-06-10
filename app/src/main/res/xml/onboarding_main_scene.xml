@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2018 Razeware LLC
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy
+  ~ of this software and associated documentation files (the "Software"), to deal
+  ~ in the Software without restriction, including without limitation the rights
+  ~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  ~ copies of the Software, and to permit persons to whom the Software is
+  ~ furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in
+  ~ all copies or substantial portions of the Software.
+  ~
+  ~ Notwithstanding the foregoing, you may not use, copy, modify, merge, publish,
+  ~ distribute, sublicense, create a derivative work, and/or sell copies of the
+  ~ Software in any work that is designed, intended, or marketed for pedagogical or
+  ~ instructional purposes related to programming, coding, application development,
+  ~ or information technology.  Permission for such use, copying, modification,
+  ~ merger, publication, distribution, sublicensing, creation of derivative works,
+  ~ or sale is expressly withheld.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  ~ THE SOFTWARE.
+  -->
+
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        app:constraintSetEnd="@id/end"
+        app:constraintSetStart="@id/start"
+        app:motionInterpolator="easeInOut">
+
+        <KeyFrameSet>
+
+            <KeyAttribute
+                app:framePosition="20"
+                app:motionTarget="@id/background">
+                <CustomAttribute
+                    app:attributeName="backgroundColor"
+                    app:customColorValue="#A5C63A" />
+            </KeyAttribute>
+
+            <KeyAttribute
+                app:framePosition="40"
+                app:motionTarget="@id/background">
+                <CustomAttribute
+                    app:attributeName="backgroundColor"
+                    app:customColorValue="#C3E6E6" />
+            </KeyAttribute>
+
+            <KeyAttribute
+                app:framePosition="60"
+                app:motionTarget="@id/background">
+                <CustomAttribute
+                    app:attributeName="backgroundColor"
+                    app:customColorValue="#464E69" />
+            </KeyAttribute>
+
+            <KeyAttribute
+                app:framePosition="80"
+                app:motionTarget="@id/background">
+                <CustomAttribute
+                    app:attributeName="backgroundColor"
+                    app:customColorValue="#AF6DA2" />
+            </KeyAttribute>
+
+            <KeyAttribute
+                app:framePosition="100"
+                app:motionTarget="@id/background">
+                <CustomAttribute
+                    app:attributeName="backgroundColor"
+                    app:customColorValue="#FBBF1D" />
+            </KeyAttribute>
+        </KeyFrameSet>
+
+        <KeyFrameSet>
+
+            <KeyAttribute
+                android:alpha="0"
+                app:framePosition="0"
+                app:motionTarget="@id/previousButton" />
+
+            <KeyAttribute
+                android:alpha="1"
+                app:framePosition="20"
+                app:motionTarget="@id/previousButton" />
+
+            <KeyAttribute
+                android:translationY="0dp"
+                app:framePosition="75"
+                app:motionTarget="@id/nextButton" />
+
+            <KeyAttribute
+                android:translationY="50dp"
+                app:framePosition="100"
+                app:motionTarget="@id/nextButton" />
+
+            <KeyAttribute
+                android:translationX="70dp"
+                app:framePosition="75"
+                app:motionTarget="@id/finishButton" />
+
+            <KeyAttribute
+                android:translationX="0dp"
+                app:framePosition="100"
+                app:motionTarget="@id/finishButton" />
+        </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+
+        <Constraint
+            android:id="@id/onboardingRoot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Constraint
+            android:id="@id/previousButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Constraint
+            android:id="@id/nextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:translationY="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Constraint
+            android:id="@id/finishButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:translationX="70dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+
+        <Constraint
+            android:id="@id/onboardingRoot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Constraint
+            android:id="@id/previousButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Constraint
+            android:id="@id/nextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:translationY="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Constraint
+            android:id="@id/finishButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:translationX="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </ConstraintSet>
+</MotionScene>

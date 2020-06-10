@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeatherForecastActivity">
+
+    <ImageView
+        android:id="@+id/imageLocation"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:contentDescription="location"
+        android:src="@drawable/location" />
+
+    <TextView
+        android:id="@+id/place"
+        android:layout_width="346dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:fontFamily="cursive"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/maxMinTemp"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/imageTest"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/temperature"
+        android:textAlignment="center"
+        android:textColor="#878686" />
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="220dp"
+        android:layout_height="110dp"
+        android:layout_below="@+id/place"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:gravity="right"
+        android:textColor="#000000"
+        android:textSize="90dp" />
+
+    <TextView
+        android:id="@+id/testSky"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+
+        android:layout_below="@+id/temperature"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-light"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/imageTest"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/place"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/temperature"
+        android:contentDescription="weather"
+        android:foregroundGravity="center" />
+
+    <View
+        android:id="@+id/h1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/testSky"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/darker_gray" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/h1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/forecastDaysRecyclerView">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

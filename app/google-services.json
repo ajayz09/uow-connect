@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "803490729867",
+    "firebase_url": "https://uowconnect-68897.firebaseio.com",
+    "project_id": "uowconnect-68897",
+    "storage_bucket": "uowconnect-68897.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:803490729867:android:016c10ccafa227bf",
+        "android_client_info": {
+          "package_name": "com.halo.loginui2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "803490729867-bk34pma6893poemqcoafg3tqoulc664o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.halo.loginui2",
+            "certificate_hash": "964b1f6f3d97ad12eb4681b754101f9b4437275a"
+          }
+        },
+        {
+          "client_id": "803490729867-5ovj19s9vckjji2kgs5r0cbhsvpjvciu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlrJnvtPD-CiWEP-SEkDmpsaRBNMjsrE4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "803490729867-5ovj19s9vckjji2kgs5r0cbhsvpjvciu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

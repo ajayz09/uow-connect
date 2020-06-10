@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.halo.loginui2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".StarterPackDetailedFragment"></activity>
+        <activity android:name=".StarterPackFragment" />
+        <activity android:name=".SportsFragment" />
+        <activity android:name=".VolunteerFragment" />
+        <activity android:name=".WellnessFragment" />
+        <activity android:name=".ClubFragment" />
+        <activity android:name=".KeyDatesFragment" />
+        <activity android:name=".StaffFinderFragment" />
+        <activity android:name=".TimeTableFragment" />
+        <activity android:name=".CourseFragment" />
+        <activity android:name=".AboutUOWFragment" />
+        <activity android:name=".FAQFragment" />
+        <activity android:name=".StudentLifeFragment" />
+        <activity android:name=".UOWFragment" />
+        <activity
+            android:name=".ProfileSettingsFragment"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".NearbyPlacesFragment" />
+        <activity android:name=".IndividualEventFragment" />
+        <activity android:name=".NearbyFragment" />
+        <activity android:name=".NearbyEvents" />
+        <activity android:name=".WeatherForecastActivity" />
+        <activity android:name=".ProfileFragment" />
+        <activity android:name=".ViewUsersFragment" />
+        <activity
+            android:name=".PostView"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".HomeFragment"
+            android:label="UOW Connect" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".ChatActivity"
+            android:parentActivityName=".ViewUsersFragment"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".Email_Sent" />
+        <activity android:name=".ForgotPassword" />
+        <activity android:name=".Signup_Activity" />
+        <activity android:name=".Activity_Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".signUpView" />
+        <activity android:name=".TransitionActivity" />
+    </application>
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+</manifest>

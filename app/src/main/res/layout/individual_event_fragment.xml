@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IndividualEventFragment">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/eventBookButton"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="BOOK TICKETS"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/eventImage"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="12pt"
+                android:layout_marginTop="8dp"
+                android:id="@+id/eventTitle"
+                android:layout_below="@+id/eventImage"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/start"
+                android:text="Starting at  "
+                android:paddingLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:textColor="#003c66"
+
+                android:layout_below="@id/eventTitle"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/eventStartTime"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/start"
+                android:textColor="#003c66"
+                android:layout_below="@id/eventTitle"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/end"
+                android:text="Finishing at  "
+                android:paddingLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:textColor="#003c66"
+                android:layout_below="@id/eventStartTime"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/eventEndTime"
+                android:layout_toRightOf="@id/end"
+                android:layout_marginTop="8dp"
+                android:textColor="#003c66"
+                android:layout_below="@id/eventStartTime"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:id="@+id/eventDescription"
+                android:layout_below="@id/eventEndTime" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
